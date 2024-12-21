@@ -15,13 +15,14 @@ from diffusers.pipelines.stable_diffusion.pipeline_output import StableDiffusion
 @dataclass
 class StableDiffusionWithHSpacePipelineOutput(BaseOutput):
     images: Union[List[PIL.Image.Image], np.ndarray]
-    h_space: Optional[List[torch.tensor]]
+    h_space: Optional[Union[List[torch.tensor], Dict[str, torch.tensor]]]
     nsfw_content_detected: Optional[List[bool]]
 
 
 class PipelineWithHspace():
-    def __init__(self, pipe):
+    def __init__(self, pipe, h_space_layer_names=['down_zero', 'down_one', 'down_two', 'down_three', 'mid']):
         self.pipe = pipe
+        self.h_space_layer_names = h_space_layer_names
         
     def __call__(
         self,
@@ -164,11 +165,32 @@ class PipelineWithHspace():
                 ).to(device=device, dtype=latents.dtype)
 
         # 7. Denoising loop
-        h_space = []
-        def get_h_space(module, input, output):
-            h_space.append(output.clone().detach())
+        down_zero_h_space = []
+        def get_down_zero_h_space(module, input, output):
+            down_zero_h_space.append(output[0].clone().detach().cpu())
+        down_zero_block_hock = self.pipe.unet.down_blocks[0].register_forward_hook(get_down_zero_h_space)
 
-        with torch.no_grad(), self.pipe.unet.mid_block.register_forward_hook(get_h_space):
+        down_one_h_space = []
+        def get_down_one_h_space(module, input, output):
+            down_one_h_space.append(output[0].clone().detach().cpu())
+        down_one_block_hock = self.pipe.unet.down_blocks[1].register_forward_hook(get_down_one_h_space)
+
+        down_two_h_space = []
+        def get_down_two_h_space(module, input, output):
+            down_two_h_space.append(output[0].clone().detach().cpu())
+        down_two_block_hock = self.pipe.unet.down_blocks[2].register_forward_hook(get_down_two_h_space)
+
+        down_three_h_space = []
+        def get_down_three_h_space(module, input, output):
+            down_three_h_space.append(output[0].clone().detach().cpu())
+        down_three_block_hock = self.pipe.unet.down_blocks[3].register_forward_hook(get_down_three_h_space)
+
+        mid_h_space = []
+        def get_mid_h_space(module, input, output):
+            mid_h_space.append(output.clone().detach().cpu())
+        mid_block_hock = self.pipe.unet.mid_block.register_forward_hook(get_mid_h_space)
+        
+        with torch.no_grad():
             num_warmup_steps = len(timesteps) - num_inference_steps * self.pipe.scheduler.order
             self.pipe._num_timesteps = len(timesteps)
             with self.pipe.progress_bar(total=num_inference_steps) as progress_bar:
@@ -242,7 +264,23 @@ class PipelineWithHspace():
         if not return_dict:
             return (image, has_nsfw_concept)
 
+        down_zero_block_hock.remove()
+        down_one_block_hock.remove()
+        down_two_block_hock.remove()
+        down_three_block_hock.remove
+        mid_block_hock.remove()
+        
+        h_space = {'down_zero': down_zero_h_space,
+                   'down_one': down_one_h_space,
+                   'down_two': down_two_h_space,
+                   'down_three': down_three_h_space,
+                   'mid': mid_h_space}
+        
+        h_space_keep = {}
+        for layer_name  in self.h_space_layer_names:
+            h_space_keep[layer_name] = h_space[layer_name]
+
         return StableDiffusionWithHSpacePipelineOutput(
             images=image, 
-            h_space=h_space,
+            h_space=h_space_keep,
             nsfw_content_detected=has_nsfw_concept)
