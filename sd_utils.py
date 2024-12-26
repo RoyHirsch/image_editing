@@ -21,6 +21,8 @@ _GENERATION_CONFIGS = {
         }, 
     
     'xl': {
+        'num_inference_steps': 50,
+        'high_noise_frac': 0.8,
         },
     
     'xl_turbo': {
@@ -45,21 +47,23 @@ class StableDiffusionXLPipelineWrapper(torch.nn.Module):
         self._base = base
         self._refiner = refiner
 
-    def __call__(self, prompt, n_steps=50, high_noise_frac=0.8):
-
+    def __getattr__(self, name):
+        return getattr(self._base, name, None)
+    
+    def __call__(self, prompt, num_inference_steps=50, high_noise_frac=0.8):
         image = self._base(
             prompt=prompt,
-            num_inference_steps=n_steps,
+            num_inference_steps=num_inference_steps,
             denoising_end=high_noise_frac,
             output_type="latent",
         ).images
 
-        image = self._refiner(
+        out = self._refiner(
             prompt=prompt,
-            num_inference_steps=n_steps,
+            num_inference_steps=num_inference_steps,
             denoising_start=high_noise_frac,
             image=image)
-        return image
+        return out
 
     def enable_model_cpu_offload(self):
         self._base.enable_model_cpu_offload()
@@ -98,23 +102,28 @@ def get_sd_pipe(model_name='2.1',
     elif model_name == 'xl':
         model_id = "stabilityai/stable-diffusion-xl-base-1.0"
         refiner_id = "stabilityai/stable-diffusion-xl-refiner-1.0"
-        
-        base = DiffusionPipeline.from_pretrained(
-            model_id, 
-            torch_dtype=torch_dtype,
-            variant=variant,
-            use_safetensors=True
-            )
-        
-        refiner = DiffusionPipeline.from_pretrained(
-            refiner_id,
-            text_encoder_2=base.text_encoder_2,
-            vae=base.vae,
+        pipe = DiffusionPipeline.from_pretrained(
+            "stabilityai/stable-diffusion-xl-base-1.0",
             torch_dtype=torch_dtype,
             use_safetensors=True,
-            variant=variant,
-        )
-        pipe = StableDiffusionXLPipelineWrapper(base, refiner)
+            variant=variant)
+        
+        # base = DiffusionPipeline.from_pretrained(
+        #     model_id, 
+        #     torch_dtype=torch_dtype,
+        #     variant=variant,
+        #     use_safetensors=True
+        #     )
+        
+        # refiner = DiffusionPipeline.from_pretrained(
+        #     refiner_id,
+        #     text_encoder_2=base.text_encoder_2,
+        #     vae=base.vae,
+        #     torch_dtype=torch_dtype,
+        #     use_safetensors=True,
+        #     variant=variant,
+        # )
+        # pipe = StableDiffusionXLPipelineWrapper(base, refiner)
         
     elif model_name == 'xl_turbo':
         pipe = StableDiffusionXLPipeline.from_single_file(
@@ -133,11 +142,11 @@ def get_sd_pipe(model_name='2.1',
         pipe = StableDiffusion3Pipeline.from_pretrained(
             "stabilityai/stable-diffusion-3-medium-diffusers",
             torch_dtype=torch.bfloat16,
-            token='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',
+            token='',  # TODO: need to put your own token
             )
 
     else:
-        raise ValueError
+        raise ValueError(f'Invalid model variant {model_name}')
 
     
     if enable_model_cpu_offload:
@@ -150,10 +159,10 @@ def get_sd_pipe(model_name='2.1',
 if __name__ == '__main__':
     for model_name in _SUPPORTED_MODELS:
         enable_model_cpu_offload = False
-        if 'xl' in model_name or '3' in model_name:
+        if model_name == '3':
             enable_model_cpu_offload = True
         pipe = get_sd_pipe(model_name, enable_model_cpu_offload=enable_model_cpu_offload)
-        
+
         prompt = "a photo of an astronaut riding a horse on mars"
         try:
             start_time = time.time()

@@ -1,0 +1,1222 @@
+[
+    {
+        "id": "drawbench_64",
+        "prompt": "An illustration of a small green elephant standing behind a large red mouse.",
+        "questions": [
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is the elephant standing?",
+        "choices": [
+            "yes",
+            "no"
+        ],
+        "answer": "yes",
+        "element_type": "activity",
+        "element": "standing"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is the elephant green?",
+        "choices": [
+            "yes",
+            "no"
+        ],
+        "answer": "yes",
+        "element_type": "color",
+        "element": "green"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "what color is the elephant?",
+        "choices": [
+            "green",
+            "red",
+            "yellow",
+            "blue"
+        ],
+        "answer": "green",
+        "element_type": "color",
+        "element": "green"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is the mouse red?",
+        "choices": [
+            "yes",
+            "no"
+        ],
+        "answer": "yes",
+        "element_type": "color",
+        "element": "red"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "what color is the mouse?",
+        "choices": [
+            "red",
+            "black",
+            "white",
+            "yellow"
+        ],
+        "answer": "red",
+        "element_type": "color",
+        "element": "red"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is the elephant small?",
+        "choices": [
+            "yes",
+            "no"
+        ],
+        "answer": "yes",
+        "element_type": "attribute",
+        "element": "small"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is the elephant small or large?",
+        "choices": [
+            "small",
+            "large",
+            "medium",
+            "tiny"
+        ],
+        "answer": "small",
+        "element_type": "attribute",
+        "element": "small"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is the mouse large?",
+        "choices": [
+            "yes",
+            "no"
+        ],
+        "answer": "yes",
+        "element_type": "attribute",
+        "element": "large"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is the mouse large or small?",
+        "choices": [
+            "large",
+            "small",
+            "medium",
+            "tiny"
+        ],
+        "answer": "large",
+        "element_type": "attribute",
+        "element": "large"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is this an illustration?",
+        "choices": [
+            "yes",
+            "no"
+        ],
+        "answer": "yes",
+        "element_type": "attribute",
+        "element": "illustration"
+        },
+        {
+        "id": "drawbench_64",
+        "caption": "An illustration of a small green elephant standing behind a large red mouse.",
+        "question": "is this an illustration, a painting, or a photograph?",
+        "choices": [
+            "illustration",
+            "painting",
+            "drawing",
+            "photograph"
+        ],
+        "answer": "illustration",
+        "element_type": "attribute",
+        "element": "illustration"
+        }
+        ]
+    },
+    {
+        "id": "drawbench_19",
+        "prompt": "A yellow book and a red vase.",
+
+        "questions": [
+            {
+                "id": "drawbench_19",
+                "caption": "A yellow book and a red vase.",
+                "question": "is there a book?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "book"
+            },
+            {
+                "id": "drawbench_19",
+                "caption": "A yellow book and a red vase.",
+                "question": "is there a vase?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "vase"
+            },
+            {
+                "id": "drawbench_19",
+                "caption": "A yellow book and a red vase.",
+                "question": "is the book yellow?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "color",
+                "element": "yellow"
+            },
+            {
+                "id": "drawbench_19",
+                "caption": "A yellow book and a red vase.",
+                "question": "what color is the book?",
+                "choices": [
+                    "yellow",
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "answer": "yellow",
+                "element_type": "color",
+                "element": "yellow"
+            },
+            {
+                "id": "drawbench_19",
+                "caption": "A yellow book and a red vase.",
+                "question": "is the vase red?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "color",
+                "element": "red"
+            },
+            {
+                "id": "drawbench_19",
+                "caption": "A yellow book and a red vase.",
+                "question": "what color is the vase?",
+                "choices": [
+                    "red",
+                    "yellow",
+                    "blue",
+                    "green"
+                ],
+                "answer": "red",
+                "element_type": "color",
+                "element": "red"
+            }
+        
+        ]
+       
+    },
+
+    {
+        "id": "coco_301091",
+        "prompt": "On a gray day a surfer carrying a white board walks on a beach.",
+        "questions": [
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "is this a surfer?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "animal/human",
+                "element": "surfer",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "who is on the beach?",
+                "choices": [
+                    "surfer",
+                    "swimmer",
+                    "diver",
+                    "skier"
+                ],
+                "answer": "surfer",
+                "element_type": "animal/human",
+                "element": "surfer",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "is the person carrying a board?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "board",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "is this a beach?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "location",
+                "element": "beach",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "what type of place is this?",
+                "choices": [
+                    "beach",
+                    "park",
+                    "forest",
+                    "mountain"
+                ],
+                "answer": "beach",
+                "element_type": "location",
+                "element": "beach",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "is the surfer carrying something?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "activity",
+                "element": "carrying",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "is the surfer walking on the beach?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "activity",
+                "element": "walks",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "is the day gray?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "color",
+                "element": "gray",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "what color is the sky?",
+                "choices": [
+                    "gray",
+                    "black",
+                    "red",
+                    "blue"
+                ],
+                "answer": "gray",
+                "element_type": "color",
+                "element": "gray",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "is the board white?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "color",
+                "element": "white",
+                "coco_val_id": "380711"
+            },
+            {
+                "id": "coco_301091",
+                "caption": "On a gray day a surfer carrying a white board walks on a beach.",
+                "question": "what color is the board?",
+                "choices": [
+                    "white",
+                    "black",
+                    "red",
+                    "blue"
+                ],
+                "answer": "white",
+                "element_type": "color",
+                "element": "white",
+                "coco_val_id": "380711"
+            }        
+        ]
+    },
+    
+    {
+        "id": "coco_629098",
+        "prompt": "some people standing around a bright lit up party bus ",
+        "questions": [
+            {
+                "id": "coco_629098",
+                "caption": "some people standing around a bright lit up party bus ",
+                "question": "are there people standing around a party bus?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "animal/human",
+                "element": "people",
+                "coco_val_id": "545219"
+            },
+            {
+                "id": "coco_629098",
+                "caption": "some people standing around a bright lit up party bus ",
+                "question": "who is standing around a party bus?",
+                "choices": [
+                    "people",
+                    "animals",
+                    "robots",
+                    "aliens"
+                ],
+                "answer": "people",
+                "element_type": "animal/human",
+                "element": "people",
+                "coco_val_id": "545219"
+            },
+            {
+                "id": "coco_629098",
+                "caption": "some people standing around a bright lit up party bus ",
+                "question": "is this a party bus?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "party bus",
+                "coco_val_id": "545219"
+            },
+            {
+                "id": "coco_629098",
+                "caption": "some people standing around a bright lit up party bus ",
+                "question": "what type of vehicle is this?",
+                "choices": [
+                    "party bus",
+                    "car",
+                    "motorcycle",
+                    "bus"
+                ],
+                "answer": "party bus",
+                "element_type": "object",
+                "element": "party bus",
+                "coco_val_id": "545219"
+            },
+            {
+                "id": "coco_629098",
+                "caption": "some people standing around a bright lit up party bus ",
+                "question": "are the people standing around a party bus?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "activity",
+                "element": "standing around",
+                "coco_val_id": "545219"
+            },
+            {
+                "id": "coco_629098",
+                "caption": "some people standing around a bright lit up party bus ",
+                "question": "is the party bus bright lit up?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "attribute",
+                "element": "bright lit up",
+                "coco_val_id": "545219"
+            },
+            {
+                "id": "coco_629098",
+                "caption": "some people standing around a bright lit up party bus ",
+                "question": "is the party bus bright lit up or dark?",
+                "choices": [
+                    "bright lit up",
+                    "dark",
+                    "dim",
+                    "light"
+                ],
+                "answer": "bright lit up",
+                "element_type": "attribute",
+                "element": "bright lit up",
+                "coco_val_id": "545219"
+            },
+            {
+                "id": "coco_629098",
+                "caption": "some people standing around a bright lit up party bus ",
+                "question": "are there some people?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "counting",
+                "element": "some",
+                "coco_val_id": "545219"
+            }        
+        ]
+    },
+    
+    {
+        "id": "partiprompt_331",
+        "prompt": "a Tyrannosaurus Rex roaring in front of a palm tree",
+        "questions": [
+            {
+                "id": "partiprompt_331",
+                "caption": "a Tyrannosaurus Rex roaring in front of a palm tree",
+                "question": "is this a Tyrannosaurus Rex?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "animal/human",
+                "element": "Tyrannosaurus Rex"
+            },
+            {
+                "id": "partiprompt_331",
+                "caption": "a Tyrannosaurus Rex roaring in front of a palm tree",
+                "question": "is there a palm tree?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "palm tree"
+            },
+            {
+                "id": "partiprompt_331",
+                "caption": "a Tyrannosaurus Rex roaring in front of a palm tree",
+                "question": "what type of plant is this?",
+                "choices": [
+                    "palm tree",
+                    "pine tree",
+                    "oak tree",
+                    "maple tree"
+                ],
+                "answer": "palm tree",
+                "element_type": "object",
+                "element": "palm tree"
+            },
+            {
+                "id": "partiprompt_331",
+                "caption": "a Tyrannosaurus Rex roaring in front of a palm tree",
+                "question": "is the Tyrannosaurus Rex roaring?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "activity",
+                "element": "roaring"
+            },
+            {
+                "id": "partiprompt_331",
+                "caption": "a Tyrannosaurus Rex roaring in front of a palm tree",
+                "question": "what is the Tyrannosaurus Rex doing?",
+                "choices": [
+                    "roaring",
+                    "walking",
+                    "running",
+                    "jumping"
+                ],
+                "answer": "roaring",
+                "element_type": "activity",
+                "element": "roaring"
+            },
+            {
+                "id": "partiprompt_331",
+                "caption": "a Tyrannosaurus Rex roaring in front of a palm tree",
+                "question": "is the Tyrannosaurus Rex in front of the palm tree?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "spatial",
+                "element": "in front of"
+            },
+            {
+                "id": "partiprompt_331",
+                "caption": "a Tyrannosaurus Rex roaring in front of a palm tree",
+                "question": "is the Tyrannosaurus Rex in front of or behind the palm tree?",
+                "choices": [
+                    "in front of",
+                    "behind",
+                    "next to",
+                    "under"
+                ],
+                "answer": "in front of",
+                "element_type": "spatial",
+                "element": "in front of"
+            }        
+        ]
+    },
+    
+    {
+        "id": "drawbench_69",
+        "prompt": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+        "questions": [
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "is this a baby panda?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "animal/human",
+                "element": "baby panda"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "what animal is in the picture?",
+                "choices": [
+                    "baby panda",
+                    "baby bear",
+                    "baby tiger",
+                    "baby lion"
+                ],
+                "answer": "baby panda",
+                "element_type": "animal/human",
+                "element": "baby panda"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "is the baby panda wearing a hat?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "hat"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "is the baby panda wearing gloves?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "gloves"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "is the baby panda wearing a shirt?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "shirt"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "is the baby panda wearing pants?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "pants"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "is the baby panda wearing a hat, gloves, shirt, and pants?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "activity",
+                "element": "wearing"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "is the hat red?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "color",
+                "element": "red"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "what color is the hat?",
+                "choices": [
+                    "red",
+                    "black",
+                    "white",
+                    "yellow"
+                ],
+                "answer": "red",
+                "element_type": "color",
+                "element": "red"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "are the gloves and pants green?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "color",
+                "element": "green"
+            },
+            {
+                "id": "drawbench_69",
+                "caption": "An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",
+                "question": "what color are the gloves and pants?",
+                "choices": [
+                    "green",
+                    "red",
+                    "blue",
+                    "yellow"
+                ],
+                "answer": "green",
+                "element_type": "color",
+                "element": "green"
+            }        
+        ]
+    },
+    
+    {
+        "id": "drawbench_53",
+        "prompt": "Three cats and three dogs sitting on the grass.",
+        "questions": [
+            {
+                "id": "drawbench_53",
+                "caption": "Three cats and three dogs sitting on the grass.",
+                "question": "are there cats?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "animal/human",
+                "element": "cats"
+            },
+            {
+                "id": "drawbench_53",
+                "caption": "Three cats and three dogs sitting on the grass.",
+                "question": "are there dogs?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "animal/human",
+                "element": "dogs"
+            },
+            {
+                "id": "drawbench_53",
+                "caption": "Three cats and three dogs sitting on the grass.",
+                "question": "is there grass?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "grass"
+            },
+            {
+                "id": "drawbench_53",
+                "caption": "Three cats and three dogs sitting on the grass.",
+                "question": "what is the animals sitting on?",
+                "choices": [
+                    "grass",
+                    "leaves",
+                    "twigs",
+                    "sand"
+                ],
+                "answer": "grass",
+                "element_type": "object",
+                "element": "grass"
+            },
+            {
+                "id": "drawbench_53",
+                "caption": "Three cats and three dogs sitting on the grass.",
+                "question": "are the animals sitting?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "activity",
+                "element": "sitting"
+            },
+            {
+                "id": "drawbench_53",
+                "caption": "Three cats and three dogs sitting on the grass.",
+                "question": "are there three cats and three dogs?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "counting",
+                "element": "three"
+            },
+            {
+                "id": "drawbench_53",
+                "caption": "Three cats and three dogs sitting on the grass.",
+                "question": "how many cats and dogs are in the picture?",
+                "choices": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "answer": "3",
+                "element_type": "counting",
+                "element": "three"
+            }        
+        ]
+    },
+    
+    {
+        "id": "partiprompt_173",
+        "prompt": "a pineapple with one beer to its left and two beers on its right",
+        "questions": [
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "is there a pineapple?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "food",
+                "element": "pineapple"
+            },
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "what fruit is in the picture?",
+                "choices": [
+                    "pineapple",
+                    "apple",
+                    "orange",
+                    "banana"
+                ],
+                "answer": "pineapple",
+                "element_type": "food",
+                "element": "pineapple"
+            },
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "is there beer?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "food",
+                "element": "beer"
+            },
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "is there one beer to the left of the pineapple?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "counting",
+                "element": "one"
+            },
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "how many beers are to the left of the pineapple?",
+                "choices": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "answer": "1",
+                "element_type": "counting",
+                "element": "one"
+            },
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "are there two beers on the right of the pineapple?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "counting",
+                "element": "two"
+            },
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "how many beers are on the right of the pineapple?",
+                "choices": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "answer": "2",
+                "element_type": "counting",
+                "element": "two"
+            },
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "is there one beer to the left or to the right of the pineapple?",
+                "choices": [
+                    "to the left",
+                    "to the right",
+                    "above",
+                    "below"
+                ],
+                "answer": "to the left",
+                "element_type": "spatial",
+                "element": "to its left"
+            },
+            {
+                "id": "partiprompt_173",
+                "caption": "a pineapple with one beer to its left and two beers on its right",
+                "question": "are there two beers on the right or on the left of the pineapple?",
+                "choices": [
+                    "on the right",
+                    "on the left",
+                    "above",
+                    "below"
+                ],
+                "answer": "on the right",
+                "element_type": "spatial",
+                "element": "on its right"
+            }        
+        ]
+    },
+    
+    {
+        "id": "coco_627537",
+        "prompt": "A pear, orange, and two bananas in a wooden bowl.",
+        "questions": [
+            {
+                "id": "coco_627537",
+                "caption": "A pear, orange, and two bananas in a wooden bowl.",
+                "question": "is there an orange?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "food",
+                "element": "orange",
+                "coco_val_id": "352618"
+            },
+            {
+                "id": "coco_627537",
+                "caption": "A pear, orange, and two bananas in a wooden bowl.",
+                "question": "are there bananas?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "food",
+                "element": "bananas",
+                "coco_val_id": "352618"
+            },
+            {
+                "id": "coco_627537",
+                "caption": "A pear, orange, and two bananas in a wooden bowl.",
+                "question": "is there a bowl?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "bowl",
+                "coco_val_id": "352618"
+            },
+            {
+                "id": "coco_627537",
+                "caption": "A pear, orange, and two bananas in a wooden bowl.",
+                "question": "are there two bananas?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "counting",
+                "element": "two",
+                "coco_val_id": "352618"
+            },
+            {
+                "id": "coco_627537",
+                "caption": "A pear, orange, and two bananas in a wooden bowl.",
+                "question": "how many bananas are in the bowl?",
+                "choices": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "answer": "2",
+                "element_type": "counting",
+                "element": "two",
+                "coco_val_id": "352618"
+            },
+            {
+                "id": "coco_627537",
+                "caption": "A pear, orange, and two bananas in a wooden bowl.",
+                "question": "is the bowl wooden?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "material",
+                "element": "wooden",
+                "coco_val_id": "352618"
+            },
+            {
+                "id": "coco_627537",
+                "caption": "A pear, orange, and two bananas in a wooden bowl.",
+                "question": "what is the material of the bowl?",
+                "choices": [
+                    "wooden",
+                    "metal",
+                    "plastic",
+                    "glass"
+                ],
+                "answer": "wooden",
+                "element_type": "material",
+                "element": "wooden",
+                "coco_val_id": "352618"
+            }        
+        ]
+    },
+        
+    {
+        "id": "coco_828781",
+        "prompt": "Three men are pushing a horse onto the back of a horse trailer.",
+        "questions": [
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "are there men?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "animal/human",
+                "element": "men",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "who are pushing a horse onto the back of a horse trailer?",
+                "choices": [
+                    "men",
+                    "women",
+                    "boys",
+                    "girls"
+                ],
+                "answer": "men",
+                "element_type": "animal/human",
+                "element": "men",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "is this a horse?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "animal/human",
+                "element": "horse",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "what animal is in the picture?",
+                "choices": [
+                    "horse",
+                    "cow",
+                    "sheep",
+                    "goat"
+                ],
+                "answer": "horse",
+                "element_type": "animal/human",
+                "element": "horse",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "is this a horse trailer?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "horse trailer",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "what type of vehicle is this?",
+                "choices": [
+                    "horse trailer",
+                    "car trailer",
+                    "motorcycle trailer",
+                    "boat trailer"
+                ],
+                "answer": "horse trailer",
+                "element_type": "object",
+                "element": "horse trailer",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "are the men pushing a horse onto the back of a horse trailer?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "activity",
+                "element": "pushing",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "are there three men?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "counting",
+                "element": "three",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "how many men are there?",
+                "choices": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "answer": "3",
+                "element_type": "counting",
+                "element": "three",
+                "coco_val_id": "97924"
+            },
+            {
+                "id": "coco_828781",
+                "caption": "Three men are pushing a horse onto the back of a horse trailer.",
+                "question": "are the men pushing a horse onto or off of the back of a horse trailer?",
+                "choices": [
+                    "onto",
+                    "off of",
+                    "under",
+                    "over"
+                ],
+                "answer": "onto",
+                "element_type": "spatial",
+                "element": "onto",
+                "coco_val_id": "97924"
+            }
+        
+        ]
+    }
+]
