@@ -38,6 +38,11 @@ class SBERTModel:
         top_choice_index = torch.argmax(torch.matmul(choices_embedding, answer_embedding.T)).item()
         return choices[top_choice_index]
 
+    def multiple_choice_with_score(self, answer, choices):
+        answer_embedding = self.embed_sentences([answer])
+        choices_embedding = self.embed_sentences(choices)
+        top_choice_index = torch.argmax(torch.matmul(choices_embedding, answer_embedding.T)).item()
+        return choices[top_choice_index], max((torch.matmul(choices_embedding, answer_embedding.T)).item().numpy())
 
 # testing
 if __name__ == "__main__":

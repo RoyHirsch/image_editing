@@ -203,3 +203,6 @@ class TifaAutoRater():
     
     def get_score(self, image_path, questions):
         return np.mean(self.get_scores(image_path, questions))
+
+    def get_scores_list(self, image_path, questions):
+        return self.get_scores(image_path, questions)

@@ -19,7 +19,7 @@ def main():
         file_name = sample['id']
         prompt = sample['prompt']
         model_name = 'xl'
-        device = torch.device('cuda:1')
+        device = torch.device('cuda:0')
         torch_dtype = torch.float16
 
         # h_space_layer_names = ['down_zero', 'down_one', 'down_two', 'down_three', 'mid']

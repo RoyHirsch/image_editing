@@ -19,7 +19,11 @@ _GENERATION_CONFIGS = {
     
     '2.1': {
         }, 
-    
+    '2.1_turbo': {
+        'num_inference_steps': 1,
+        'guidance_scale': 0.0,
+        }, 
+
     'xl': {
         'num_inference_steps': 50,
         'high_noise_frac': 0.8,
@@ -99,11 +103,17 @@ def get_sd_pipe(model_name='2.1',
             torch_dtype=torch_dtype)
         pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 
+    elif model_name == '2.1_turbo':
+        model_id = "stabilityai/sd-turbo"
+        pipe = AutoPipelineForText2Image.from_pretrained(
+            model_id,
+            torch_dtype=torch_dtype)
+
     elif model_name == 'xl':
         model_id = "stabilityai/stable-diffusion-xl-base-1.0"
         refiner_id = "stabilityai/stable-diffusion-xl-refiner-1.0"
         pipe = DiffusionPipeline.from_pretrained(
-            "stabilityai/stable-diffusion-xl-base-1.0",
+            model_id,
             torch_dtype=torch_dtype,
             use_safetensors=True,
             variant=variant)

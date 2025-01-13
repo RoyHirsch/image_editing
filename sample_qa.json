@@ -1,5 +1,101 @@
 [
     {
+        "id": "drawbench_22",
+        "prompt": "A black apple and a green backpack",
+        "questions":[
+            {
+                "id": "drawbench_22",
+                "caption": "A black apple and a green backpack.",
+                "question": "is there an apple?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "food",
+                "element": "apple"
+            },
+            {
+                "id": "drawbench_22",
+                "caption": "A black apple and a green backpack.",
+                "question": "what fruit is in the picture?",
+                "choices": [
+                    "apple",
+                    "orange",
+                    "banana",
+                    "pear"
+                ],
+                "answer": "apple",
+                "element_type": "food",
+                "element": "apple"
+            },
+            {
+                "id": "drawbench_22",
+                "caption": "A black apple and a green backpack.",
+                "question": "is there a backpack?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "object",
+                "element": "backpack"
+            },
+            {
+                "id": "drawbench_22",
+                "caption": "A black apple and a green backpack.",
+                "question": "is the apple black?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "color",
+                "element": "black"
+            },
+            {
+                "id": "drawbench_22",
+                "caption": "A black apple and a green backpack.",
+                "question": "what color is the apple?",
+                "choices": [
+                    "black",
+                    "red",
+                    "yellow",
+                    "green"
+                ],
+                "answer": "black",
+                "element_type": "color",
+                "element": "black"
+            },
+            {
+                "id": "drawbench_22",
+                "caption": "A black apple and a green backpack.",
+                "question": "is the backpack green?",
+                "choices": [
+                    "yes",
+                    "no"
+                ],
+                "answer": "yes",
+                "element_type": "color",
+                "element": "green"
+            },
+            {
+                "id": "drawbench_22",
+                "caption": "A black apple and a green backpack.",
+                "question": "what color is the backpack?",
+                "choices": [
+                    "green",
+                    "red",
+                    "yellow",
+                    "blue"
+                ],
+                "answer": "green",
+                "element_type": "color",
+                "element": "green"
+            }        
+        ]
+    },
+    {
         "id": "drawbench_64",
         "prompt": "An illustration of a small green elephant standing behind a large red mouse.",
         "questions": [

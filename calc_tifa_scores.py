@@ -13,7 +13,7 @@ def get_all_abs_filenames(dir_name):
 
 
 def main():
-    root_dir = '/home/royhirsch_google_com/image_editing/files/xl_turbo'
+    root_dir = '/home/royhirsch_google_com/image_editing/files/xl'
     qa_json_path = '/home/royhirsch_google_com/image_editing/sample_qa.json'
     
     
